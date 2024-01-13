@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function kiemTraPhepTinh(){
+            let a = parseFloat(prompt("nhap a"));
+            let b = parseFloat(prompt("nhap b"));
+            let phepTinh = prompt("+,-,*,%");
+            let ketQua;
+            switch(phepTinh){
+                case '+':
+                    ketQua = a + b;
+                    break;
+                case '-':
+                    ketQua = a - b;
+                    break;
+                case '%':
+                    ketQua = a % b;
+                    break;
+                case '*':
+                    ketQua = a * b;
+                    break;
+            }
+            console.log(ketQua);
+        }
+        kiemTraPhepTinh();
+    </script>
+</body>
+</html>

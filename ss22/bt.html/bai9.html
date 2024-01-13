@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function checkValue(){
+            let thang = parseInt(prompt("Nhập vào tháng (1-12):"));
+            let nam = parseInt(prompt("Nhập vào năm:"));
+            if (thang >= 1 && thang <= 12 && nam > 0) {
+                let soNgay = new Date(nam, thang, 0).getDate();
+                console.log(`Tháng ${thang} năm ${nam} có ${soNgay} ngày.`);
+            } else {
+                console.log("Giá trị không hợp lệ. Vui lòng nhập lại.");
+            }
+        }
+        checkValue();
+    </script>
+</body>
+</html>

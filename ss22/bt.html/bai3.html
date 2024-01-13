@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sqrt(a) {
+            if (a < 0) {
+                return false;
+            }
+            const sqrtA = Math.sqrt(a);
+            return Math.pow(Math.floor(sqrtA), 2) === a;
+        }
+        try {
+            const b = parseFloat(prompt("Nhập vào một số: "));
+            if (isNaN(b)) {
+                throw "Đây không phải là một số hợp lệ.";
+            } else {
+                if (sqrt(b)) {
+                    console.log(`${b} là số chính phương.`);
+                } else {
+                    console.log(`${b} không phải là số chính phương.`);
+                }
+            }
+        } catch (error) {
+            console.log(error);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function test(a, b, c){
+            return a+b>c && b+c>a && a+c>b;
+        }
+        let a = parseFloat(prompt("nhap canh a"));
+        let b = parseFloat(prompt("nhap canh b"));
+        let c = parseFloat(prompt("nhap canh c"));
+        if(test(a, b, c)){
+            console.log(" hop le");
+        }else {
+            console.log("hop le");
+        }
+    </script>
+</body>
+</html>
